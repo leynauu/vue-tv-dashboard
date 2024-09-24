@@ -1,29 +1,3 @@
-# my-project
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
 TV Show Dasboard
 
 Bu proje, popüler TV şovlarını listeleyen ve şovların detaylarını modal penceresinde gösteren bir uygulamadır.
@@ -36,7 +10,7 @@ TV şov detaylarını modal ile açma
 Arama yapma ve sonuçları gösterme
 
 KURULUM 
-Depoyu klonlayın: git clone https://github.com/kullanici/proje-adi.git
+Depoyu klonlayın: git clone https://github.com/leynauu/vue-tv-dashboard.git
 Bağımlılıkları yükleyin: npm install
 Uygulamayı başlatın: npm run serve
 

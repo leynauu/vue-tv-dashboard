@@ -1,0 +1,34 @@
+///Image Card
+.content-box {
+    position:relative;
+  }
+  .content-box .ea-ribbon {
+    display:none;
+  }
+  .content-box .content-box-content {
+    padding:25px 30px 30px 30px;
+  }
+  .content-box.onhover-content-box {
+    overflow:hidden;
+  }
+  .content-box.onhover-content-box .ea-ribbon {
+    display:inline-block;
+  }
+  .content-box.onhover-content-box .content-box-content {
+    position:absolute;
+    width:100%;
+    z-index:1;
+    bottom:auto;
+    top:-100%;
+    left:0;
+    right:0;
+    height:100%;
+    transition:all 0.3s ease-in-out;
+    z-index:3;
+  }
+  .content-box.onhover-content-box:hover .content-box-content {
+    top:0;
+  }
+  .content-box.onhover-content-box:hover .ea-ribbon {
+    left:-100%;
+  }

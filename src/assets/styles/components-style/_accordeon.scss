@@ -1,0 +1,42 @@
+.accordion > .card {
+    transition:all 0.15s ease-in-out;
+    &.active {
+        -moz-transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -o-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+}
+.accordion > .card,
+.accordion > .card:first-of-type,
+.accordion > .card:not(:first-of-type):not(:last-of-type) {
+  border:1px solid $gray-200;
+  margin-bottom:15px;
+}
+.accordion > .card .card-header {
+  border-bottom:1px solid $gray-200;
+  background-color: transparent;
+  h4{
+      font-weight:400;
+  }
+  &.bg-light {
+      h4 {
+          font-weight:600;
+      }
+  }
+}
+.accordion > .card h4 i {
+  position:absolute;
+  right:18.5px;
+  top:16px;
+  z-index:1;
+}
+.accordion > .card h4 a {
+    //font-size:$font-size-base;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $dark;
+    position: relative;
+    z-index: 2;
+}

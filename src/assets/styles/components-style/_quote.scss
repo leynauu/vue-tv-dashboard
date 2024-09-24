@@ -1,0 +1,117 @@
+//Quote
+.quote-card {
+  background: $light;
+  color: $dark;
+  padding: 20px;
+  padding-left: 50px;
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+.quote-card p {
+  margin: 0;
+  max-width: 95%;
+  position: relative;
+  z-index: 2;
+  @media (min-width: $ea-lg) {
+    font-size:1.15rem;
+    font-weight:300;
+  }
+}
+.quote-card cite {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+  font-family:$headings-font-family;
+  @media (min-width: $ea-lg) {
+    font-size: 1.1rem;
+  }
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: $gray-300;
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: -32px;
+  font-size: 25em;
+  color: $gray-300;
+  font-weight: normal;
+  @media (max-width: $ea-sm) {
+    font-size: 22em;
+    right: -25px;
+  }
+}
+.owl-carousel .quote-card:before {
+  top: 0;
+}
+.owl-carousel .quote-card:after {
+  right: 0;
+}
+.quote-card.primary {
+  background: $primary;
+  color: $white;
+}
+.quote-card.secondary {
+  background: $secondary;
+  color: $dark;
+}
+.quote-card.success {
+  background: $success;
+  color: $white;
+}
+.quote-card.info {
+  background: $info;
+  color: $white;
+}
+.quote-card.warning {
+  background: $warning;
+  color: $dark;
+}
+.quote-card.danger {
+  background: $danger;
+  color: $white;
+}
+.quote-card.dark {
+  background: $dark;
+  color: $white;
+}
+.quote-card.transparent {
+  background: transparent;
+  color: $dark;
+  padding-left:40px;
+}
+.quote-card.primary:before,
+.quote-card.primary:after,
+.quote-card.success:before,
+.quote-card.success:after,
+.quote-card.info:before,
+.quote-card.info:after,
+.quote-card.danger:before,
+.quote-card.danger:after,
+.quote-card.dark:before,
+.quote-card.dark:after {
+  color: rgba(255, 255, 255, 0.3);
+}
+.quote-card.warning:before,
+.quote-card.warning:after,
+.quote-card.secondary:before,
+.quote-card.secondary:after,
+.quote-card.transparent:before,
+.quote-card.transparent:after {
+  color: rgba(0, 0, 0, 0.2);
+}
+.quote-card.transparent:before {
+  left:0;
+}

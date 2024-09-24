@@ -1,0 +1,330 @@
+@import "_variables_overwrite";
+
+//required
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+//Custom.. Bununla mixin ile olusturulanlari tekrar duzenliyoruz. ornegin butonlari tekrar yaptim.
+@import "bootstrap-mixin-overwrite";
+
+//optional
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/code";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/button-group";
+@import "../../../node_modules/bootstrap/scss/input-group";
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "../../../node_modules/bootstrap/scss/badge";
+//@import "../../../node_modules/bootstrap/scss/jumbotron";
+@import "../../../node_modules/bootstrap/scss/alert";
+//@import "../../../node_modules/bootstrap/scss/progress";
+@import "../../../node_modules/bootstrap/scss/media";
+@import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+//@import "../../../node_modules/bootstrap/scss/toasts";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/popover";
+//@import "../../../node_modules/bootstrap/scss/carousel";
+//@import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/print";
+
+//media querylerde lazim olcak. kendi variable larimizi tanimlayalim
+$ea-sm: 576px !default;
+$ea-md: 768px !default;
+$ea-lg: 992px !default;
+$ea-xl: 1200px !default;
+
+@import "bootstrap-scss-overwrite";
+@import "components-style/_button";
+//@import "components-style/_table";
+//@import "components-style/_menu";
+//@import "components-style/_iconbox";
+//@import "components-style/_accordeon";
+//@import "components-style/_imagecard";
+//@import "components-style/_mask_after";
+//@import "components-style/_onhover";
+//@import "components-style/_owl";
+//@import "components-style/_timeline";
+//@import "components-style/_quote";
+//@import "components-style/_hovercard";
+//@import "components-style/_background";
+//@import "components-style/_seperators";
+//@import "components-style/_helpers";
+//@import "components-style/_alert";
+//@import "components-style/_widgets";
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    padding-top: 60px;
+    background-color: $dark;
+
+    @media (min-width: $ea-lg) {
+        padding-top: 72px;
+    }
+}
+
+.col-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+}
+
+.col-15 {
+    width: 20%;
+    float: left;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.col,
+[class*="col-"] {
+    margin-bottom: 30px;
+}
+
+.no-gutters {
+    > .col,
+    > [class*="col-"] {
+        margin-bottom: 0;
+    }
+}
+
+.extra-large-gutters {
+    @media (min-width: $ea-lg) {
+        margin-left: -$grid-gutter-extra-large / 2;
+        margin-right: -$grid-gutter-extra-large / 2;
+    }
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: $grid-gutter-extra-large / 2;
+        padding-left: $grid-gutter-extra-large / 2;
+        margin-bottom: $grid-gutter-extra-large;
+    }
+}
+
+.large-gutters {
+    @media (min-width: $ea-lg) {
+        margin-left: -$grid-gutter-large / 2;
+        margin-right: -$grid-gutter-large / 2;
+    }
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: $grid-gutter-large / 2;
+        padding-left: $grid-gutter-large / 2;
+        margin-bottom: $grid-gutter-large;
+    }
+}
+
+.small-gutters {
+    margin-left: -$grid-gutter-small / 2;
+    margin-right: -$grid-gutter-small / 2;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: $grid-gutter-small / 2;
+        padding-left: $grid-gutter-small / 2;
+        margin-bottom: $grid-gutter-small;
+    }
+}
+
+#main-content {
+    .with-seperator {
+        margin-bottom: 0;
+        margin-top:0;
+        position: relative;
+        padding-bottom: 15px;
+
+        &:after {
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: $primary;
+            content: "";
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .text-center {
+        .with-seperator:after {
+            left: 50%;
+            margin-left: -30px;
+        }
+    }
+
+    &.sidebar-content {
+        .container {
+            @media (max-width: $ea-lg) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.content-section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 3.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    @media (min-width: $ea-lg) {
+        padding-top: 4.5em;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: calc(4.5em - 30px);
+    }
+}
+
+.horizontal-scroller {
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.parallax__container {
+    clip: rect(0, auto, auto, 0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.parallax {
+    position: fixed;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+    min-height: 400px;
+    /* BG behaviour */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.absolute-center {
+    position: absolute;
+    z-index: 2;
+    display: table;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    > .absolute-center-content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+[data-label] {
+    display:inline-block;
+    position:absolute;
+    left:15px;
+    top:-10px;
+    padding:0 6px;
+    margin-bottom:0;
+    background-color:#fff;
+    font-size:.8rem;
+    z-index:5;
+    color:$gray-600;
+}
+[class*="col-"] > [data-label] {
+    left: 30px;
+}
+.bg-light [data-label] {
+    background-color:$light;
+}
+#cookie-policy {
+    position:fixed;
+    left:0;
+    right:0;
+    width:100%;
+    bottom:0;
+    z-index:9999;
+    transition:bottom 0.3s ease-in-out;
+
+    &.accepted {
+        bottom:-300px;
+    }
+
+    button#btn-accept-cookies {
+        position:absolute;
+        right:10px;
+        top:-14px;
+    }
+}
+
+.form-control{
+    background-color: transparent !important;
+}

@@ -1,0 +1,208 @@
+﻿$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: rgba(255, 255, 255, 0.1) !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #191919 !default;
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #A38D29 !default;
+$purple: #8F4799 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #F5931F !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$brown: #8D5927 !default;
+
+$primary: #005A8E !default;
+$secondary: #ff00c8 !default;
+$success: $green !default;
+$info: #0093D4 !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+$theme-colors: ( 
+    "black": $black,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "blue": $blue,
+    "brown": $brown,
+    "purple": $purple,
+    "indigo": $indigo,
+    "orange": $orange
+);
+
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-hover-media-query: false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+$enable-print-styles: true !default;
+$enable-responsive-font-sizes: true !default;
+$enable-validation-icons: true !default;
+$enable-deprecation-messages: true !default;
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge( ( 5: ($spacer * 2.5), 6: ($spacer * 4), 7: ($spacer * 5), 8: ($spacer * 6), 9: ($spacer * 7), 10: ($spacer * 8) ), $spacers );
+
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+$border-width: 1px !default;
+$border-color: $gray-500 !default;
+
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+$rounded-pill: 50rem !default;
+
+$box-shadow-sm: 0 .2rem .35rem rgba($black, .08) !default;
+$box-shadow: 0 .3rem .75rem rgba($black, .15) !default;
+$box-shadow-lg: 0 .7rem 2rem rgba($black, .175) !default;
+
+
+$component-active-color: $white !default;
+$component-active-bg: $primary !default;
+
+
+$font-family-sans-serif: "Open Sans", Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: 0.92rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$grid-gutter-width: 30px !default;
+//2 tanes gutter size ekliyorum.
+$grid-gutter-small: 15px !default;
+$grid-gutter-large: 50px !default;
+$grid-gutter-extra-large: 100px !default;
+
+
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.1 !default;
+$h2-font-size: $font-size-base * 1.8 !default;
+$h3-font-size: $font-size-base * 1.3 !default;
+$h4-font-size: $font-size-base * 1.1 !default;
+$h5-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base * 0.95 !default;
+
+$headings-margin-bottom: $spacer / 2 !default;
+$headings-font-family: null !default;
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$display1-size: 4.5rem !default;
+$display2-size: 3.5rem !default;
+$display3-size: 2.5rem !default;
+$display4-size: 2rem !default;
+
+$display1-weight: 300 !default;
+$display2-weight: 300 !default;
+$display3-weight: 300 !default;
+$display4-weight: 300 !default;
+$display-line-height: $headings-line-height !default;
+
+$lead-font-size: $font-size-base * 1.25 !default;
+$lead-font-weight: 300 !default;
+
+$small-font-size: 80% !default;
+
+
+$input-btn-padding-y: .375rem !default;
+$input-btn-padding-x: .75rem !default;
+$input-btn-font-family: null !default;
+$input-btn-font-size: $font-size-base !default;
+$input-btn-line-height: $line-height-base !default;
+
+$input-btn-focus-width: .2rem !default;
+$input-btn-focus-color: rgba($component-active-bg, .25) !default;
+//$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow: none !default;
+
+$input-btn-padding-y-sm: .25rem !default;
+$input-btn-padding-x-sm: .5rem !default;
+$input-btn-font-size-sm: $font-size-sm !default;
+$input-btn-line-height-sm: $line-height-sm !default;
+
+//$input-btn-padding-y-lg: .5rem !default;
+$input-btn-padding-y-lg: .7rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-font-size-lg: $font-size-lg !default;
+$input-btn-line-height-lg: $line-height-lg !default;
+
+$input-btn-border-width: $border-width !default;
+
+
+
+$btn-box-shadow: none !default;
+$btn-active-box-shadow: none !default;
+$btn-font-family: 'Open Sans', Arial, sans-serif !default;
+$btn-padding-x: 1rem !default;
+$btn-padding-x-sm: .75rem !default;
+$btn-padding-x-lg: 1.5rem !default;
+
+
+
+$carousel-control-width: 50px;
+$carousel-control-color: $primary;
+
+
+
+$navbar-padding-y: 15px !default;
+$navbar-padding-x: 15px !default;
+$navbar-nav-link-padding-x: 15px !default;
+$navbar-nav-link-padding-y: 15px !default;
+$navbar-dark-color: #fff !default;
+$navbar-dark-hover-color: #fff !default;
+$navbar-dark-active-color: #fff !default;
+$navbar-light-color: $dark !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;
+
+
+$dropdown-padding-y: 0 !default;
+$dropdown-item-padding-y: 10px !default;
+$dropdown-item-padding-x: 15px !default;
+
+
+
+$breadcrumb-divider-color: #000 !default;
+$breadcrumb-divider: quote("\279D") !default;
+$breadcrumb-font-size: 0.8rem !default;

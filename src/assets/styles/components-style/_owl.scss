@@ -1,0 +1,283 @@
+//OWL
+.owl-carousel {
+	.owl-stage {
+		display: flex;
+	}
+	.owl-item {
+		display: flex;
+		flex: 1 0 auto;
+	}
+}
+
+#home-slider .owl-stage-outer,
+#home-slider .owl-stage,
+#home-slider .owl-item {
+    height: auto;
+}
+
+#home-slider {
+    /*
+    .item {
+        height: 80%;
+        min-height: 80%;
+
+        @media (min-width: $ea-lg) {
+            height: 80%;
+            min-height: 80%;
+        }
+    }
+    */
+
+    &.subpage-slider {
+        .item {
+            height: 500px;
+            min-height: 500px;
+
+            @media (min-width: $ea-lg) {
+                height: 500px;
+                min-height: 500px;
+            }
+        }
+    }
+
+}
+
+
+.slide-content-center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home-slider .slide-title,
+#home-slider .slide-desc {
+    font-size: 26px;
+    line-height: 1.2;
+    //text-shadow: 2px 2px 4px $dark;
+    @media (max-width: $ea-md) {
+        font-size: 26px;
+    }
+
+    @media (max-width: $ea-sm) {
+        font-size: 20px;
+    }
+}
+
+#home-slider .slide-desc {
+    font-size: 1.15rem;
+    text-shadow: none;
+
+    @media (max-width: $ea-md) {
+        font-size: 18px;
+    }
+
+    @media (max-width: $ea-sm) {
+        font-size: 15px;
+    }
+}
+
+#home-slider-dots {
+    > a {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        margin: 0 3px;
+        opacity: .7;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+.owl-dots {
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    > span {
+        display: none;
+    }
+}
+
+.subpage-slider .owl-dots {
+    bottom: auto;
+    top: 10px;
+    right: 15px;
+    text-align: right;
+
+    @media (min-width: $ea-lg) {
+        bottom: 150px;
+        top: auto;
+        right: 0;
+        text-align: center;
+    }
+}
+
+.dots-outside .owl-dots {
+    bottom: -30px;
+}
+
+.owl-dots .owl-dot {
+    background: $primary !important;
+    //border: 1px solid #fff !important;
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 3px;
+    opacity: 1;
+    outline: none;
+}
+
+.owl-dots .owl-dot.active {
+    background: $secondary !important;
+}
+
+.dots-outside.primary .owl-dots .owl-dot {
+    background: lighten($primary, 5%) !important;
+    border: 1px solid lighten($primary, 5%) !important;
+
+    &.active {
+        background: $primary !important;
+        //border: 1px solid $primary !important;
+    }
+}
+
+.dots-outside.secondary .owl-dots .owl-dot {
+    background: lighten($secondary, 5%) !important;
+    //border: 1px solid lighten($secondary, 5%) !important;
+
+    &.active {
+        background: $secondary !important;
+        border: 1px solid $secondary !important;
+    }
+}
+
+.dots-outside.success .owl-dots .owl-dot {
+    background: lighten($success, 5%) !important;
+    //border: 1px solid lighten($success, 5%) !important;
+
+    &.active {
+        background: $success !important;
+        border: 1px solid $success !important;
+    }
+}
+
+.dots-outside.warning .owl-dots .owl-dot {
+    background: lighten($warning, 5%) !important;
+    //border: 1px solid lighten($warning, 5%) !important;
+
+    &.active {
+        background: $warning !important;
+        border: 1px solid $warning !important;
+    }
+}
+
+.dots-outside.info .owl-dots .owl-dot {
+    background: lighten($info, 5%) !important;
+    //border: 1px solid lighten($info, 5%) !important;
+
+    &.active {
+        background: $info !important;
+        border: 1px solid $info !important;
+    }
+}
+
+.dots-outside.danger .owl-dots .owl-dot {
+    background: lighten($danger, 5%) !important;
+    //border: 1px solid lighten($danger, 5%) !important;
+
+    &.active {
+        background: $danger !important;
+        border: 1px solid $danger !important;
+    }
+}
+
+.owl-nav {
+    display: block;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    left: 0;
+    height: 0;
+    top: 50%;
+
+    button {
+        outline: none;
+        border: none;
+        background: $light !important;
+        padding: 0 !important;
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 18px;
+        margin-top: -25px;
+
+        &.owl-prev {
+            left: -15px;
+        }
+
+        &.owl-next {
+            right: -15px;
+        }
+    }
+}
+
+#home-slider .owl-prev {
+    left: 0;
+}
+
+#home-slider .owl-next {
+    right: 0;
+}
+
+@media (max-width: $ea-lg) {
+    #home-slider .owl-prev,
+    #home-slider .owl-next {
+        display: none;
+    }
+}
+
+
+.owl-thumb {
+    height: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3px solid $white;
+    cursor: pointer;
+
+    &.current {
+        border: 3px solid $primary;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+#owl-gallery img {
+    width: auto;
+    max-height: 500px;
+    margin: 0 auto;
+}

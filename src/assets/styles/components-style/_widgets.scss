@@ -1,0 +1,44 @@
+.pdf-list-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding-right:40px;
+    transition:all 0.2s ease;
+    color:$body-color;
+
+    &:after {
+        font-family: 'Burgan_ico' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        content: "\e911";
+        font-size:30px;
+    }
+
+    &:hover {
+        color:$link-color;
+        text-decoration:none;
+    }
+
+    &:last-child {
+        border-bottom:none !important;
+        margin-bottom:0 !important;
+    }
+
+    &.without-small {
+        &:after {
+            top:0;
+            font-size:26px;
+        }
+    }
+}
+

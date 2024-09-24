@@ -1,0 +1,12 @@
+﻿table{
+    min-width:600px;
+}
+table.wide {
+    min-width:992px;
+}
+table.small-fonts {
+    th, td {
+        font-size: 90%;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,19 @@
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:$input-btn-padding-y;
+    padding-right:$input-btn-padding-y;
+    &.btn-lg {
+        padding-left:$input-btn-padding-y-lg;
+        padding-right:$input-btn-padding-y-lg;
+    }
+    &.btn-sm {
+        padding-left:$input-btn-padding-y-sm;
+        padding-right:$input-btn-padding-y-sm;
+    }
+
+    > span {
+        padding:0 !important;
+    }
+}

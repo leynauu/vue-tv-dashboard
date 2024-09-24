@@ -1,0 +1,211 @@
+section.with-seperator svg {
+    display: block;
+  }
+  
+  section.with-seperator::before,
+  section.with-seperator::after {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+  }
+  
+  /* Triangles */
+  .ss-style-triangles::before,
+  .ss-style-triangles::after {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .ss-style-triangles::before {
+    top: -50px;
+  }
+  
+  .ss-style-triangles::after {
+    bottom: -50px;
+    z-index: 10;
+  }
+  .ss-style-triangles.bg-primary::before,
+  .ss-style-triangles.bg-primary::after {
+    background: theme-color("primary");
+  }
+  .ss-style-triangles.bg-danger::before,
+  .ss-style-triangles.bg-danger::after {
+    background: theme-color("danger");
+  }
+  .ss-style-triangles.bg-warning::before,
+  .ss-style-triangles.bg-warning::after {
+    background: theme-color("warning");
+  }
+  .ss-style-triangles.bg-success::before,
+  .ss-style-triangles.bg-success::after {
+    background: theme-color("success");
+  }
+  .ss-style-triangles.bg-light::before,
+  .ss-style-triangles.bg-light::after {
+    background: theme-color("light");
+  }
+  .ss-style-triangles.bg-dark::before,
+  .ss-style-triangles.bg-dark::after {
+    background: theme-color("dark");
+  }
+  .ss-style-triangles.bg-black::before,
+  .ss-style-triangles.bg-black::after {
+    background: theme-color("black");
+  }
+  
+  /* Double Diagonal line */
+  
+  .ss-style-doublediagonal {
+    z-index: 1;
+    padding-top: 6em;
+  }
+  
+  .ss-style-doublediagonal::before,
+  .ss-style-doublediagonal::after {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  
+  .ss-style-doublediagonal::before {
+    height: 50%;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+  }
+  .ss-style-doublediagonal.bg-primary::before {
+    background: theme-color-level(primary, 4);
+  }
+  .ss-style-doublediagonal.bg-warning::before {
+    background: theme-color-level(warning, 4);
+  }
+  .ss-style-doublediagonal.bg-success::before {
+    background: theme-color-level(success, 4);
+  }
+  .ss-style-doublediagonal.bg-danger::before {
+    background: theme-color-level(danger, 4);
+  }
+  .ss-style-doublediagonal.bg-info::before {
+    background: theme-color-level(info, 4);
+  }
+  .ss-style-doublediagonal.bg-light::before {
+    background: theme-color-level(light, 1);
+  }
+  .ss-style-doublediagonal.bg-dark::before {
+    background: theme-color-level(dark, 4);
+  }
+  
+  /* Big Triangle */
+  svg.bigtriangle {
+    pointer-events: none;
+  }
+  
+  svg.bigtriangle path {
+    stroke-width: 2;
+  }
+  svg.bigtriangle.primary path {
+    fill: theme-color("primary");
+    stroke: theme-color("primary");
+  }
+  svg.bigtriangle.success path {
+    fill: theme-color("success");
+    stroke: theme-color("success");
+  }
+  svg.bigtriangle.danger path {
+    fill: theme-color("danger");
+    stroke: theme-color("danger");
+  }
+  svg.bigtriangle.warning path {
+    fill: theme-color("warning");
+    stroke: theme-color("warning");
+  }
+  svg.bigtriangle.info path {
+    fill: theme-color("info");
+    stroke: theme-color("info");
+  }
+  svg.bigtriangle.light path {
+    fill: theme-color("light");
+    stroke: theme-color("light");
+  }
+  svg.bigtriangle.dark path {
+    fill: theme-color("dark");
+    stroke: theme-color("dark");
+  }
+  
+  /* Curves */
+  svg.curveup.primary path,
+  svg.curvedown.primary path {
+    fill: theme-color("primary");
+    stroke: theme-color("primary");
+  }
+  svg.curveup.success path,
+  svg.curvedown.success path {
+    fill: theme-color("success");
+    stroke: theme-color("success");
+  }
+  svg.curveup.danger path,
+  svg.curvedown.danger path {
+    fill: theme-color("danger");
+    stroke: theme-color("danger");
+  }
+  svg.curveup.warning path,
+  svg.curvedown.warning path {
+    fill: theme-color("warning");
+    stroke: theme-color("warning");
+  }
+  svg.curveup.info path,
+  svg.curvedown.info path {
+    fill: theme-color("info");
+    stroke: theme-color("info");
+  }
+  svg.curveup.light path,
+  svg.curvedown.light path {
+    fill: theme-color("light");
+    stroke: theme-color("light");
+  }
+  svg.curveup.dark path,
+  svg.curvedown.dark path {
+    fill: theme-color("dark");
+    stroke: theme-color("dark");
+  }
+  
+  /* Big half circle */
+  svg.halfcircle.primary path {
+    fill: theme-color("primary");
+    stroke: theme-color("primary");
+  }
+  svg.halfcircle.success path {
+    fill: theme-color("success");
+    stroke: theme-color("success");
+  }
+  svg.halfcircle.danger path {
+    fill: theme-color("danger");
+    stroke: theme-color("danger");
+  }
+  svg.halfcircle.warning path {
+    fill: theme-color("warning");
+    stroke: theme-color("warning");
+  }
+  svg.halfcircle.info path {
+    fill: theme-color("info");
+    stroke: theme-color("info");
+  }
+  svg.halfcircle.light path {
+    fill: theme-color("light");
+    stroke: theme-color("light");
+  }
+  svg.halfcircle.dark path {
+    fill: theme-color("dark");
+    stroke: theme-color("dark");
+  }
